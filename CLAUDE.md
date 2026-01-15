@@ -10,6 +10,10 @@ This is a Yarn workspaces monorepo containing two packages:
 - `@emeraldpay/hashicon` - Core library (vanilla JS/TS)
 - `@emeraldpay/hashicon-react` - React component wrapper
 
+## Requirements
+
+- Node.js 16+ (18 LTS recommended, see `.nvmrc`)
+
 ## Development Commands
 
 ```bash
@@ -19,7 +23,7 @@ yarn install
 # Build all packages (outputs to lib/ in each package)
 yarn build
 
-# Start Storybook development environment
+# Start Storybook development environment (port 6006)
 yarn workspace @emeraldpay/hashicon run storybook
 
 # Build individual packages
@@ -31,7 +35,7 @@ yarn workspace @emeraldpay/hashicon run clean
 yarn workspace @emeraldpay/hashicon-react run clean
 ```
 
-Note: Tests are currently stubbed (`echo "*** TODO TESTS ***"`). Jest with ts-jest is configured but no tests are implemented.
+Note: Tests are currently stubbed (`echo "*** TODO TESTS ***"`).
 
 ## Architecture
 
@@ -62,4 +66,4 @@ The `hasher` parameter controls which algorithm produces the visual seed:
 
 - Tab indentation for source files
 - No Prettier/ESLint configuration (follow existing style)
-- TypeScript 3.9.x target
+- TypeScript 5.x, target ES2020

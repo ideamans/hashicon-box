@@ -1,21 +1,16 @@
 {
   "compilerOptions": {
-	"esModuleInterop": true,
-	"composite": true,
-	"allowSyntheticDefaultImports": true,
-	"outDir": "./lib",
-	"declaration": true,
-	"strict": false,
-	"jsx": "react",
-	"rootDir": "./src",
-	"forceConsistentCasingInFileNames": true
+    "outDir": "./lib",
+    "declaration": true,
+    "module": "commonjs",
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM"],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": false,
+    "jsx": "react",
+    "rootDir": "./src"
   },
-  "include": [
-	"src/*.ts",
-	"src/*.tsx"
-  ],
-  "exclude": [
-	"../../node_modules",
-	"node_modules"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
 }
