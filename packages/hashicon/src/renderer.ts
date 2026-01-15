@@ -35,7 +35,6 @@ function renderer(hashValues: Uint16Array, params: Params) {
 	const canvas = createCanvas(size, size);
 	const ctx = canvas.getContext('2d');
 
-
 	Sprites.forEach((line, i) => {
 		const light = params.light.enabled ? params.light[line.light] : 1;
 
