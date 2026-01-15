@@ -1,6 +1,6 @@
 import React from 'react';
 import {Component} from "react";
-import {Params, hashicon, HasherType} from "@emeraldpay/hashicon";
+import {Params, hashicon, HasherType} from "@ideamans-npm/hashicon";
 
 export interface Props {
 	value: string;
