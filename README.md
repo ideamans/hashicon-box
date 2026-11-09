@@ -149,4 +149,7 @@ Apache 2
 
 See [LICENSE](LICENSE)
 
+## Releasing (maintainers)
 
+Bump `version` in packages/*/package.json, commit, then `git tag vX.Y.Z && git push origin vX.Y.Z`.
+GitHub Actions publishes to npm with Trusted Publishing (OIDC); no token is used.
