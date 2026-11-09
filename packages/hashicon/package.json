@@ -18,7 +18,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emeraldpay/hashicon.git"
+    "url": "git+https://github.com/ideamans/hashicon-box.git",
+    "directory": "packages/hashicon"
   },
   "keywords": [
     "hash",

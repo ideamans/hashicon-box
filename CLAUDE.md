@@ -87,5 +87,6 @@ The upstream `publish.yaml` (release-triggered, `NPM_TOKEN`) was removed.
 - Do not `npm publish` from a local machine (no tokens are kept).
 - To re-run without moving the tag, start "Publish to npm" with workflow_dispatch (it publishes the version in packages/hashicon/package.json and packages/hashicon-react/package.json on the chosen branch).
 - A PR that changes `publish.yml` runs the build and `npm pack --dry-run` without publishing.
+- `repository` in package.json must point at this repository: provenance verification compares them and a mismatch fails the publish with `E422` (the workflow checks it first).
 - Prerequisite: on npmjs.com, `@ideamans-npm/hashicon` and `@ideamans-npm/hashicon-react` lists GitHub Actions / `ideamans/hashicon-box` / `publish.yml` with the **publish** permission as its
   Trusted Publisher. With only the stage-publish permission, `npm publish` fails with `E403 OIDC permission denied`.
